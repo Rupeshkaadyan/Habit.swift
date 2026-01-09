@@ -29,6 +29,7 @@ final class HabitsStore {
     private func defaultHabits() -> [Habit] {
         [
             Habit(title: "Study iOS"),
+            Habit(title: "Walk a Mile"),
             Habit(title: "Workout"),
             Habit(title: "Drink Water"),
             Habit(title: "Sleep on Time")
