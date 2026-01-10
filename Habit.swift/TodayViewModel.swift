@@ -9,6 +9,7 @@ import Foundation
 import Combine
 
 final class TodayViewModel: ObservableObject {
+    
 
     @Published var habits: [Habit] = [] {
         didSet {
@@ -36,4 +37,5 @@ final class TodayViewModel: ObservableObject {
             habits[index].isCompleted = false
         }
     }
+    
 }
