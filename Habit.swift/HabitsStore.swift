@@ -35,6 +35,7 @@ final class HabitsStore {
             Habit(title: "Drink Water"),
             Habit(title: "Sleep on Time"),
             Habit(title: "Book Reading")
+            Habit(title: "Desk Clean")
         ]
     }
 }
