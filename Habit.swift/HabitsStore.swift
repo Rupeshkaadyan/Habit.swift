@@ -1,18 +1,9 @@
-//
-//  HabitsStore.swift
-//  Habit.swift
-//
-//  Created by Ethan on 07/01/26.
-//
-
-import Foundation
+//import Foundation
 
 final class HabitsStore {
 
-   
     private let key = "daily_habits"
 
-    
     private let encoder = JSONEncoder()
     private let decoder = JSONDecoder()
 
@@ -31,6 +22,11 @@ final class HabitsStore {
         return habits
     }
 
+    /// Clears all saved habits from storage
+    func reset() {
+        UserDefaults.standard.removeObject(forKey: key)
+    }
+
     private func defaultHabits() -> [Habit] {
         [
             Habit(title: "Study iOS"),
@@ -38,6 +34,7 @@ final class HabitsStore {
             Habit(title: "Workout"),
             Habit(title: "Drink Water"),
             Habit(title: "Sleep on Time"),
+            Habit(title: "Book Reading")
             Habit(title: "Desk Clean")
         ]
     }
