@@ -1,5 +1,7 @@
 //import Foundation
 
+import Foundation
+
 final class HabitsStore {
 
     private let key = "daily_habits"
@@ -34,8 +36,8 @@ final class HabitsStore {
             Habit(title: "Workout"),
             Habit(title: "Drink Water"),
             Habit(title: "Sleep on Time"),
-            Habit(title: "Book Reading")
-            Habit(title: "Desk Clean")
+            Habit(title: "Book Reading"),
+            
         ]
     }
 }
